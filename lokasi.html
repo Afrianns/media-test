@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lokasi - Akarirasa</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/js/main.js" defer></script>
+  </head>
+  <body class="antialiased bg-brand-bg text-brand font-sans selection:bg-brand-accent selection:text-white">
+    
+    <!-- Navbar -->
+    <nav
+      class="fixed w-full top-0 z-50 bg-brand-bg/90 backdrop-blur-md border-b border-brand-light transition-all duration-300"
+      id="navbar"
+    >
+      <div
+        class="container mx-auto px-6 lg:px-12 py-4 flex justify-between items-center"
+      >
+        <!-- Logo -->
+        <a
+          href="#"
+          class="text-2xl font-heading text-brand flex items-center gap-2"
+        >
+          <i data-lucide="coffee" class="w-6 h-6 stroke-[3]"></i>
+          Akarirasa
+        </a>
+
+        <!-- Desktop Links -->
+        <div class="hidden md:flex space-x-8 text-sm font-medium">
+          <a href="index.html" class="hover:text-brand-accent transition-colors"
+            >Beranda</a
+          >
+          <a href="produk.html" class="hover:text-brand-accent transition-colors"
+            >Produk</a
+          >
+          <a href="tentang.html" class="hover:text-brand-accent transition-colors"
+            >Tentang Kami</a
+          >
+          <a href="lokasi.html" class="text-brand-accent transition-colors"
+            >Lokasi</a
+          >
+          <a href="kontak.html" class="hover:text-brand-accent transition-colors"
+            >Kontak</a
+          >
+        </div>
+
+        <!-- CTA & Mobile Toggle -->
+        <div class="flex items-center gap-4">
+          <a
+            href="#produk"
+            class="hidden md:flex gap-x-3 bg-brand-secondary hover:bg-brand text-white px-5 py-2.5 rounded-full text-sm font-bold transition-colors shadow-lg shadow-brand/20"
+          >
+            Beli Kopi
+            <i data-lucide="MoveRight" class="w-6 h-6"></i>
+          </a>
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="mobile-menu-btn"
+            class="md:hidden text-brand hover:text-brand-accent focus:outline-none"
+          >
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Dropdown -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-brand-bg border-b border-brand-light"
+      >
+        <div class="flex flex-col px-6 py-10 space-y-5 text-center shadow-lg shadow-brand/10">
+          <a href="index.html" class="hover:text-brand-accent transition-colors"
+            >Beranda</a
+          >
+          <a href="produk.html" class="hover:text-brand-accent transition-colors"
+            >Produk</a
+          >
+          <a href="tentang.html" class="hover:text-brand-accent transition-colors"
+            >Tentang Kami</a
+          >
+          <a href="lokasi.html" class="text-brand-accent transition-colors"
+            >Lokasi</a
+          >
+          <a href="kontak.html" class="hover:text-brand-accent transition-colors"
+            >Kontak</a
+          >
+          <hr>
+          <a
+            href="#produk"
+            class="bg-brand-secondary flex gap-x-3 justify-center hover:bg-brand text-white px-5 py-3 rounded-full font-bold mx-auto w-full max-w-xs shadow-lg shadow-brand/20"
+            >Beli Kopi
+            <i data-lucide="MoveRight" class="w-6 h-6"></i>
+            </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Lokasi (Split Kiri-Kanan) -->
+    <header class="pt-20 lg:pt-24 min-h-[85vh] flex flex-col lg:flex-row border-b border-brand-light">
+      <!-- Kiri: Teks -->
+      <div class="w-full lg:w-1/2 px-6 lg:px-16 xl:px-24 py-16 lg:py-24 flex flex-col justify-center">
+        <p class="text-brand-accent uppercase tracking-widest text-xs font-bold mb-4">
+          TEMUKAN KAMI
+        </p>
+        <h1 class="text-5xl lg:text-6xl xl:text-7xl font-heading text-brand leading-[1.1] mb-6">
+          Singgah, cicipi, dan bawa pulang kopi favorit Kamu.
+        </h1>
+        <p class="text-lg opacity-80 leading-relaxed mb-8 max-w-lg">
+          Datang dan nikmati kopi yang baru disangrai, obrolan hangat, serta panduan seduh dari tim kami.
+        </p>
+        <a
+          href="#toko-offline"
+          class="inline-flex items-center justify-center gap-x-2 bg-brand-secondary hover:bg-brand text-white px-6 py-3 rounded-full font-bold transition-colors w-max shadow-lg shadow-brand/20"
+        >
+          Lihat Lokasi
+          <i data-lucide="arrow-down" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+      <!-- Kanan: Placeholder Gambar -->
+      <div class="w-full lg:w-1/2 bg-brand-bg lg:border-l border-brand-light p-6 lg:p-12 flex items-center justify-center min-h-[400px] lg:min-h-full">
+        <div class="w-full h-full min-h-[350px] border border-brand-light bg-white rounded-sm flex flex-col items-center justify-center p-8 text-center text-brand-accent">
+          <i data-lucide="image" class="w-12 h-12 mb-4 opacity-50"></i>
+          <span class="text-xs font-medium uppercase tracking-wider opacity-80 max-w-[250px]">
+            PLACEHOLDER FOTO — fasad kedai Akar Rasa, pagi Bandung, suasana hangat
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Toko Offline -->
+    <section id="toko-offline" class="container mx-auto px-6 lg:px-12 py-20 lg:py-28">
+      <div class="mb-12">
+        <p class="text-brand-accent uppercase tracking-widest text-xs font-bold mb-3">
+          TOKO OFFLINE
+        </p>
+        <h2 class="text-4xl md:text-5xl font-heading text-brand leading-tight max-w-2xl">
+          Tiga tempat untuk menikmati sajian Akarirasa.
+        </h2>
+      </div>
+
+      <!-- Grid Lokasi -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        
+        <!-- card 1 -->
+        <div class="border border-brand-light bg-white p-8 hover:border-brand-accent/40 transition-colors flex flex-col h-full rounded-lg">
+          <p class="text-brand-accent uppercase tracking-widest text-xs font-bold mb-2">BANDUNG</p>
+          <h3 class="text-3xl font-heading text-brand mb-4">Kedai Braga</h3>
+          <p class="text-sm opacity-80 mb-8 border-b border-brand-light pb-6">
+            Jl. Braga No. 45, Bandung
+          </p>
+          
+          <div class="mb-8 flex-grow">
+            <p class="text-brand-accent uppercase tracking-widest text-xs font-bold mb-2">JAM OPERASIONAL</p>
+            <p class="text-sm opacity-80 leading-relaxed">
+              Sen–Jum 07.00–21.00<br>
+              Sab–Min 08.00–22.00
+            </p>
+          </div>
+          
+          <a href="#" class="inline-flex items-center justify-center gap-x-2 border border-brand-secondary text-brand-secondary hover:bg-brand-secondary hover:text-white px-5 py-2.5 rounded-full text-sm font-bold transition-colors w-max">
+            Petunjuk Arah
+            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- card 2 -->
+        <div class="border border-brand-light bg-white p-8 hover:border-brand-accent/40 transition-colors flex flex-col h-full rounded-lg">
+          <p class="text-brand-accent uppercase tracking-widest text-xs font-bold mb-2">BANDUNG</p>
+          <h3 class="text-3xl font-heading text-brand mb-4">Roastery Cibadak</h3>
+          <p class="text-sm opacity-80 mb-8 border-b border-brand-light pb-6">
+            Jl. Cibadak No. 122, Bandung
+          </p>
+          
+          <div class="mb-8 flex-grow">
+            <p class="text-brand-accent uppercase tracking-widest text-xs font-bold mb-2">JAM OPERASIONAL</p>
+            <p class="text-sm opacity-80 leading-relaxed">
+              Sen–Sab 09.00–18.00<br>
+              Minggu tutup
+            </p>
+          </div>
+          
+          <a href="#" class="inline-flex items-center justify-center gap-x-2 border border-brand-secondary text-brand-secondary hover:bg-brand-secondary hover:text-white px-5 py-2.5 rounded-full text-sm font-bold transition-colors w-max">
+            Petunjuk Arah
+            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- card 3 -->
+        <div class="border border-brand-light bg-white p-8 hover:border-brand-accent/40 transition-colors flex flex-col h-full rounded-lg">
+          <p class="text-brand-accent uppercase tracking-widest text-xs font-bold mb-2">JAKARTA</p>
+          <h3 class="text-3xl font-heading text-brand mb-4">Pop-up Jakarta</h3>
+          <p class="text-sm opacity-80 mb-8 border-b border-brand-light pb-6">
+            Ashta District 8, Jakarta
+          </p>
+          
+          <div class="mb-8 flex-grow">
+            <p class="text-brand-accent uppercase tracking-widest text-xs font-bold mb-2">JAM OPERASIONAL</p>
+            <p class="text-sm opacity-80 leading-relaxed">
+              Setiap hari 10.00–22.00<br>
+              Hingga 30 Desember
+            </p>
+          </div>
+          
+          <a href="#" class="inline-flex items-center justify-center gap-x-2 border border-brand-secondary text-brand-secondary hover:bg-brand-secondary hover:text-white px-5 py-2.5 rounded-full text-sm font-bold transition-colors w-max">
+            Petunjuk Arah
+            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Peta Lokasi -->
+    <section class="bg-[#F4EFEA] py-20 lg:py-28">
+      <div class="container mx-auto px-6 lg:px-12">
+        <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+          
+          <!-- Kiri: Info -->
+          <div class="w-full lg:w-5/12">
+            <p class="text-brand-accent uppercase tracking-widest text-xs font-bold mb-4">
+              PETA LOKASI
+            </p>
+            <h2 class="text-4xl lg:text-5xl font-heading text-brand leading-[1.1] mb-6">
+              Kedai utama kami berlokasi di pusat Braga.
+            </h2>
+            <p class="text-base opacity-80 leading-relaxed mb-6">
+              Lima menit berjalan kaki dari Gedung Merdeka. Parkir tersedia di area Braga City Walk.
+            </p>
+            <div class="font-bold text-brand leading-relaxed">
+              <p>Jl. Braga No. 45, Bandung</p>
+              <p class="text-brand-accent font-medium mt-1">+62 22 555 0145</p>
+            </div>
+          </div>
+
+          <!-- Kanan: Peta Placeholder -->
+          <div class="w-full lg:w-7/12">
+            <div class="w-full aspect-[4/3] lg:aspect-video bg-white border border-brand-light flex flex-col items-center justify-center text-center text-brand-accent shadow-sm">
+              <i data-lucide="map-pin" class="w-10 h-10 mb-3 opacity-60"></i>
+              <span class="text-xs font-bold uppercase tracking-wider opacity-80">
+                PLACEHOLDER PETA — BANDUNG
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Belanja Online -->
+    <section class="container mx-auto px-6 lg:px-12 py-20 lg:py-28 border-b border-brand-light">
+      <div class="mb-12">
+        <p class="text-brand-accent uppercase tracking-widest text-xs font-bold mb-3">
+          BELANJA ONLINE
+        </p>
+        <h2 class="text-4xl md:text-5xl font-heading text-brand leading-tight max-w-2xl mb-4">
+          Tidak sempat singgah? Kami tetap dekat.
+        </h2>
+        <p class="opacity-80">
+          Pesan sebelum pukul 14.00 untuk pengiriman di hari yang sama di area Bandung.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Tokopedia -->
+        <div class="border border-brand-light bg-white p-8 hover:border-brand-accent/40 transition-colors flex flex-col justify-center">
+          <h3 class="text-3xl font-heading text-brand mb-4">Tokopedia</h3>
+          <a href="#" class="text-brand-accent font-bold hover:text-brand transition-colors inline-flex items-center gap-1 mb-4 w-max">
+            Akar Rasa Official <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </a>
+          <p class="text-sm text-brand-accent opacity-80">
+            Pengiriman nasional dengan kurir pilihan.
+          </p>
+        </div>
+
+        <!-- Shopee -->
+        <div class="border border-brand-light bg-white p-8 hover:border-brand-accent/40 transition-colors flex flex-col justify-center">
+          <h3 class="text-3xl font-heading text-brand mb-4">Shopee</h3>
+          <a href="#" class="text-brand-accent font-bold hover:text-brand transition-colors inline-flex items-center gap-1 mb-4 w-max">
+            Akar Rasa Coffee <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </a>
+          <p class="text-sm text-brand-accent opacity-80">
+            Promo rutin dan paket sampel kopi Nusantara.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- Bottom CTA Section (Split Background) -->
+    <section class="w-full flex flex-col lg:flex-row mt-12 lg:mt-24">
+      <div
+        class="w-full lg:w-1/2 bg-brand text-white p-12 lg:p-24 flex flex-col justify-center relative overflow-hidden"
+      >
+        <div
+          class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-32 -mt-32 blur-3xl"
+        ></div>
+
+        <div class="relative z-10 max-w-md mx-auto lg:mx-0 lg:ml-auto w-full">
+          <p class="text-brand-accent uppercase tracking-widest text-xs font-bold mb-4">
+            SAMPAI BERTEMU
+          </p>
+          <h2 class="text-4xl lg:text-5xl font-heading leading-tight mb-8">
+            Datang menikmati kopi, pulang membawa kenangan.
+          </h2>
+          <a
+            href="#produk"
+            class="inline-block bg-brand-secondary text-brand-dark px-8 py-3.5 rounded-full font-bold transition-colors shadow-lg shadow-black/10"
+          >
+            Kunjungi Kedai
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Side (Light Bg with Image) -->
+      <div
+        class="w-full lg:w-1/2 bg-[#FCFAFA] p-8 lg:p-16 flex items-center justify-center min-h-[400px]"
+      >
+        <div
+          class="w-full h-full min-h-[300px] max-w-lg bg-brand-light/40 border border-brand-accent/20 rounded-2xl flex flex-col items-center justify-center p-8 text-center text-brand-accent"
+        >
+          <i data-lucide="package" class="w-12 h-12 mb-4 opacity-40"></i>
+          <span class="text-sm font-bold uppercase tracking-wider opacity-60"
+            >Placeholder: Packaging Pengiriman</span
+          >
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer
+      class="bg-brand text-brand-light pt-20 pb-10 border-t border-brand-dark"
+    >
+      <div class="container mx-auto px-6 lg:px-12">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-16"
+        >
+          <!-- Brand Col -->
+          <div class="lg:col-span-5">
+            <a
+              href="#"
+              class="text-3xl font-heading text-white flex items-center gap-2 mb-6"
+            >
+              <i data-lucide="coffee" class="w-8 h-8 stroke-[2.5]"></i>
+              Akarirasa
+            </a>
+            <p class="opacity-70 max-w-sm mb-6 text-sm leading-relaxed">
+              Kopi Nusantara yang dirawat dari akar, disangrai untuk rasa.
+            </p>
+            <div class="flex gap-4">
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full bg-brand-secondary flex items-center justify-center hover:bg-brand-accent transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <g fill="none">
+                    <g clip-path="url(#SVGXv8lpc2Y)">
+                      <path
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        d="M0 12.067C0 18.034 4.333 22.994 10 24v-8.667H7V12h3V9.333c0-3 1.933-4.666 4.667-4.666c.866 0 1.8.133 2.666.266V8H15.8c-1.467 0-1.8.733-1.8 1.667V12h3.2l-.533 3.333H14V24c5.667-1.006 10-5.966 10-11.933C24 5.43 18.6 0 12 0S0 5.43 0 12.067"
+                        clip-rule="evenodd"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="SVGXv8lpc2Y">
+                        <path fill="#fff" d="M0 0h24v24H0z" />
+                      </clipPath>
+                    </defs>
+                  </g>
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full bg-brand-secondary flex items-center justify-center hover:bg-brand-accent transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1.2em"
+                  height="1.2em"
+                  viewBox="0 0 1024 1024"
+                >
+                  <path d="M0 0h1024v1024H0z" fill="none" />
+                  <path
+                    fill="currentColor"
+                    d="M512 378.7c-73.4 0-133.3 59.9-133.3 133.3S438.6 645.3 512 645.3S645.3 585.4 645.3 512S585.4 378.7 512 378.7M911.8 512c0-55.2.5-109.9-2.6-165c-3.1-64-17.7-120.8-64.5-167.6c-46.9-46.9-103.6-61.4-167.6-64.5c-55.2-3.1-109.9-2.6-165-2.6c-55.2 0-109.9-.5-165 2.6c-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6c46.9 46.9 103.6 61.4 167.6 64.5c55.2 3.1 109.9 2.6 165 2.6c55.2 0 109.9.5 165-2.6c64-3.1 120.8-17.7 167.6-64.5c46.9-46.9 61.4-103.6 64.5-167.6c3.2-55.1 2.6-109.8 2.6-165M512 717.1c-113.5 0-205.1-91.6-205.1-205.1S398.5 306.9 512 306.9S717.1 398.5 717.1 512S625.5 717.1 512 717.1m213.5-370.7c-26.5 0-47.9-21.4-47.9-47.9s21.4-47.9 47.9-47.9s47.9 21.4 47.9 47.9a47.84 47.84 0 0 1-47.9 47.9"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full bg-brand-secondary flex items-center justify-center hover:bg-brand-accent transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width=".9em"
+                  height=".9em"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M0 0h16v16H0z" fill="none" />
+                  <path
+                    fill="currentColor"
+                    d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07l-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Links Cols -->
+          <div class="lg:col-span-7 grid grid-cols-2 md:grid-cols-3 gap-8">
+            <div>
+              <h4 class="text-white font-bold mb-6 font-heading tracking-wide">
+                Jelajah
+              </h4>
+              <ul class="space-y-3 text-sm opacity-80">
+                <li>
+                  <a href="index.html" class="hover:text-brand-accent transition-colors"
+                    >Beranda</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="tentang.html"
+                    class="hover:text-brand-accent transition-colors"
+                    >Tentang Kami</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="produk.html"
+                    class="hover:text-brand-accent transition-colors"
+                    >Produk</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="lokasi.html"
+                    class="hover:text-brand-accent transition-colors"
+                    >Lokasi</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-white font-bold mb-6 font-heading tracking-wide">
+                Bantuan
+              </h4>
+              <ul class="space-y-3 text-sm opacity-80">
+                <li>
+                  <a href="#" class="hover:text-brand-accent transition-colors"
+                    >Pengiriman & Retur</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-brand-accent transition-colors"
+                    >FAQ</a
+                  >
+                </li>
+                <li>
+                  <a href="kontak.html" class="hover:text-brand-accent transition-colors"
+                    >Kontak</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-white font-bold mb-6 font-heading tracking-wide">
+                Legal
+              </h4>
+              <ul class="space-y-3 text-sm opacity-80">
+                <li>
+                  <a href="#" class="hover:text-brand-accent transition-colors"
+                    >Syarat & Ketentuan</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-brand-accent transition-colors"
+                    >Kebijakan Privasi</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div
+          class="border-t border-brand-light/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs opacity-50"
+        >
+          <p>&copy; 2024 Akarirasa Coffee Roasters. Hak Cipta Dilindungi.</p>
+          <p>
+            Didesain dengan
+            <i data-lucide="heart" class="w-3 h-3 inline mx-1 fill-current"></i>
+            di Bandung
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
