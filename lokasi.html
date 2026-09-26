@@ -20,11 +20,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="/js/main.js" defer></script>
   </head>
-  <body class="antialiased bg-brand-bg text-brand font-sans selection:bg-brand-accent selection:text-white">
+  <body class="antialiased bg-brand-light text-brand font-sans selection:bg-brand-accent selection:text-brand-light">
     
     <!-- Navbar -->
     <nav
-      class="fixed w-full top-0 z-50 bg-brand-bg/90 backdrop-blur-md border-b border-brand-light transition-all duration-300"
+      class="fixed w-full top-0 z-50 bg-brand-light/90 backdrop-blur-md border-b border-brand-light transition-all duration-300"
       id="navbar"
     >
       <div
@@ -62,7 +62,7 @@
         <div class="flex items-center gap-4">
           <a
             href="#produk"
-            class="hidden md:flex gap-x-3 bg-brand-secondary hover:bg-brand text-white px-5 py-2.5 rounded-full text-sm font-bold transition-colors shadow-lg shadow-brand/20"
+            class="hidden md:flex gap-x-3 bg-brand-secondary hover:bg-brand text-brand-light px-5 py-2.5 rounded-full text-sm font-bold transition-colors shadow-lg shadow-brand/20"
           >
             Beli Kopi
             <i data-lucide="MoveRight" class="w-6 h-6"></i>
@@ -81,7 +81,7 @@
       <!-- Mobile Menu Dropdown -->
       <div
         id="mobile-menu"
-        class="hidden md:hidden bg-brand-bg border-b border-brand-light"
+        class="hidden md:hidden bg-brand-light border-b border-brand-light"
       >
         <div class="flex flex-col px-6 py-10 space-y-5 text-center shadow-lg shadow-brand/10">
           <a href="index.html" class="hover:text-brand-accent transition-colors"
@@ -102,7 +102,7 @@
           <hr>
           <a
             href="#produk"
-            class="bg-brand-secondary flex gap-x-3 justify-center hover:bg-brand text-white px-5 py-3 rounded-full font-bold mx-auto w-full max-w-xs shadow-lg shadow-brand/20"
+            class="bg-brand-secondary flex gap-x-3 justify-center hover:bg-brand text-brand-light px-5 py-3 rounded-full font-bold mx-auto w-full max-w-xs shadow-lg shadow-brand/20"
             >Beli Kopi
             <i data-lucide="MoveRight" class="w-6 h-6"></i>
             </a>
@@ -125,7 +125,7 @@
         </p>
         <a
           href="#toko-offline"
-          class="inline-flex items-center justify-center gap-x-2 bg-brand-secondary hover:bg-brand text-white px-6 py-3 rounded-full font-bold transition-colors w-max shadow-lg shadow-brand/20"
+          class="inline-flex items-center justify-center gap-x-2 bg-brand-secondary hover:bg-brand text-brand-light px-6 py-3 rounded-full font-bold transition-colors w-max shadow-lg shadow-brand/20"
         >
           Lihat Lokasi
           <i data-lucide="arrow-down" class="w-4 h-4"></i>
@@ -133,12 +133,11 @@
       </div>
 
       <!-- Kanan: Placeholder Gambar -->
-      <div class="w-full lg:w-1/2 bg-brand-bg lg:border-l border-brand-light p-6 lg:p-12 flex items-center justify-center min-h-[400px] lg:min-h-full">
-        <div class="w-full h-full min-h-[350px] border border-brand-light bg-white rounded-sm flex flex-col items-center justify-center p-8 text-center text-brand-accent">
-          <i data-lucide="image" class="w-12 h-12 mb-4 opacity-50"></i>
-          <span class="text-xs font-medium uppercase tracking-wider opacity-80 max-w-[250px]">
-            PLACEHOLDER FOTO — fasad kedai Akar Rasa, pagi Bandung, suasana hangat
-          </span>
+      <div class="w-full lg:w-1/2 bg-brand-light lg:border-l border-brand-light p-6 lg:p-12 flex items-center justify-center min-h-[400px] lg:min-h-full">
+        <div
+          class="relative overflow-hidden w-full h-full min-h-[300px] max-w-lg bg-brand-light/40 border border-brand-accent/20 rounded-2xl flex flex-col items-center justify-center p-8 text-center text-brand-accent"
+        >
+          <img src="assets/coffee-stall.png" class="object-cover absolute top-0 left-0 bottom-0 right-0 w-full h-full" alt="">
         </div>
       </div>
     </header>
@@ -158,7 +157,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
         
         <!-- card 1 -->
-        <div class="border border-brand-light bg-white p-8 hover:border-brand-accent/40 transition-colors flex flex-col h-full rounded-lg">
+        <div class="border border-brand-light bg-brand-light p-8 hover:border-brand-accent/40 transition-colors flex flex-col h-full rounded-lg">
           <p class="text-brand-accent uppercase tracking-widest text-xs font-bold mb-2">BANDUNG</p>
           <h3 class="text-3xl font-heading text-brand mb-4">Kedai Braga</h3>
           <p class="text-sm opacity-80 mb-8 border-b border-brand-light pb-6">
@@ -173,14 +172,14 @@
             </p>
           </div>
           
-          <a href="#" class="inline-flex items-center justify-center gap-x-2 border border-brand-secondary text-brand-secondary hover:bg-brand-secondary hover:text-white px-5 py-2.5 rounded-full text-sm font-bold transition-colors w-max">
+          <a href="#" class="inline-flex items-center justify-center gap-x-2 border border-brand-secondary text-brand-secondary hover:bg-brand-secondary hover:text-brand-light px-5 py-2.5 rounded-full text-sm font-bold transition-colors w-max">
             Petunjuk Arah
             <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
           </a>
         </div>
 
         <!-- card 2 -->
-        <div class="border border-brand-light bg-white p-8 hover:border-brand-accent/40 transition-colors flex flex-col h-full rounded-lg">
+        <div class="border border-brand-light bg-brand-light p-8 hover:border-brand-accent/40 transition-colors flex flex-col h-full rounded-lg">
           <p class="text-brand-accent uppercase tracking-widest text-xs font-bold mb-2">BANDUNG</p>
           <h3 class="text-3xl font-heading text-brand mb-4">Roastery Cibadak</h3>
           <p class="text-sm opacity-80 mb-8 border-b border-brand-light pb-6">
@@ -195,14 +194,14 @@
             </p>
           </div>
           
-          <a href="#" class="inline-flex items-center justify-center gap-x-2 border border-brand-secondary text-brand-secondary hover:bg-brand-secondary hover:text-white px-5 py-2.5 rounded-full text-sm font-bold transition-colors w-max">
+          <a href="#" class="inline-flex items-center justify-center gap-x-2 border border-brand-secondary text-brand-secondary hover:bg-brand-secondary hover:text-brand-light px-5 py-2.5 rounded-full text-sm font-bold transition-colors w-max">
             Petunjuk Arah
             <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
           </a>
         </div>
 
         <!-- card 3 -->
-        <div class="border border-brand-light bg-white p-8 hover:border-brand-accent/40 transition-colors flex flex-col h-full rounded-lg">
+        <div class="border border-brand-light bg-brand-light p-8 hover:border-brand-accent/40 transition-colors flex flex-col h-full rounded-lg">
           <p class="text-brand-accent uppercase tracking-widest text-xs font-bold mb-2">JAKARTA</p>
           <h3 class="text-3xl font-heading text-brand mb-4">Pop-up Jakarta</h3>
           <p class="text-sm opacity-80 mb-8 border-b border-brand-light pb-6">
@@ -217,7 +216,7 @@
             </p>
           </div>
           
-          <a href="#" class="inline-flex items-center justify-center gap-x-2 border border-brand-secondary text-brand-secondary hover:bg-brand-secondary hover:text-white px-5 py-2.5 rounded-full text-sm font-bold transition-colors w-max">
+          <a href="#" class="inline-flex items-center justify-center gap-x-2 border border-brand-secondary text-brand-secondary hover:bg-brand-secondary hover:text-brand-light px-5 py-2.5 rounded-full text-sm font-bold transition-colors w-max">
             Petunjuk Arah
             <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
           </a>
@@ -250,11 +249,8 @@
 
           <!-- Kanan: Peta Placeholder -->
           <div class="w-full lg:w-7/12">
-            <div class="w-full aspect-[4/3] lg:aspect-video bg-white border border-brand-light flex flex-col items-center justify-center text-center text-brand-accent shadow-sm">
-              <i data-lucide="map-pin" class="w-10 h-10 mb-3 opacity-60"></i>
-              <span class="text-xs font-bold uppercase tracking-wider opacity-80">
-                PLACEHOLDER PETA — BANDUNG
-              </span>
+            <div class="w-full aspect-[4/3] lg:aspect-video bg-brand-light border border-brand-light flex flex-col items-center justify-center text-center text-brand-accent shadow-sm overflow-hidden">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d440.4002661295873!2d107.60789440824365!3d-6.919272876315267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1790415074695!5m2!1sid!2sid" class="w-full h-full" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
             </div>
           </div>
 
@@ -278,7 +274,7 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <!-- Tokopedia -->
-        <div class="border border-brand-light bg-white p-8 hover:border-brand-accent/40 transition-colors flex flex-col justify-center">
+        <div class="border border-brand-light bg-brand-light p-8 hover:border-brand-accent/40 transition-colors flex flex-col justify-center">
           <h3 class="text-3xl font-heading text-brand mb-4">Tokopedia</h3>
           <a href="#" class="text-brand-accent font-bold hover:text-brand transition-colors inline-flex items-center gap-1 mb-4 w-max">
             Akar Rasa Official <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
@@ -289,7 +285,7 @@
         </div>
 
         <!-- Shopee -->
-        <div class="border border-brand-light bg-white p-8 hover:border-brand-accent/40 transition-colors flex flex-col justify-center">
+        <div class="border border-brand-light bg-brand-light p-8 hover:border-brand-accent/40 transition-colors flex flex-col justify-center">
           <h3 class="text-3xl font-heading text-brand mb-4">Shopee</h3>
           <a href="#" class="text-brand-accent font-bold hover:text-brand transition-colors inline-flex items-center gap-1 mb-4 w-max">
             Akar Rasa Coffee <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
@@ -305,10 +301,10 @@
     <!-- Bottom CTA Section (Split Background) -->
     <section class="w-full flex flex-col lg:flex-row mt-12 lg:mt-24">
       <div
-        class="w-full lg:w-1/2 bg-brand text-white p-12 lg:p-24 flex flex-col justify-center relative overflow-hidden"
+        class="w-full lg:w-1/2 bg-brand text-brand-light p-12 lg:p-24 flex flex-col justify-center relative overflow-hidden"
       >
         <div
-          class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-32 -mt-32 blur-3xl"
+          class="absolute top-0 right-0 w-64 h-64 bg-brand-light/5 rounded-full -mr-32 -mt-32 blur-3xl"
         ></div>
 
         <div class="relative z-10 max-w-md mx-auto lg:mx-0 lg:ml-auto w-full">
@@ -329,15 +325,12 @@
 
       <!-- Right Side (Light Bg with Image) -->
       <div
-        class="w-full lg:w-1/2 bg-[#FCFAFA] p-8 lg:p-16 flex items-center justify-center min-h-[400px]"
+        class="w-full lg:w-1/2 p-8 lg:p-16 flex items-center justify-center min-h-[400px]"
       >
         <div
-          class="w-full h-full min-h-[300px] max-w-lg bg-brand-light/40 border border-brand-accent/20 rounded-2xl flex flex-col items-center justify-center p-8 text-center text-brand-accent"
+          class="relative overflow-hidden w-full h-full min-h-[300px] max-w-lg bg-brand-light/40 border border-brand-accent/20 rounded-2xl flex flex-col items-center justify-center p-8 text-center text-brand-accent"
         >
-          <i data-lucide="package" class="w-12 h-12 mb-4 opacity-40"></i>
-          <span class="text-sm font-bold uppercase tracking-wider opacity-60"
-            >Placeholder: Packaging Pengiriman</span
-          >
+          <img src="assets/coffee-package.png" class="object-cover absolute top-0 left-0 bottom-0 right-0 w-full h-full" alt="">
         </div>
       </div>
     </section>
@@ -355,7 +348,7 @@
           <div class="lg:col-span-5">
             <a
               href="#"
-              class="text-3xl font-heading text-white flex items-center gap-2 mb-6"
+              class="text-3xl font-heading text-brand-light flex items-center gap-2 mb-6"
             >
               <i data-lucide="coffee" class="w-8 h-8 stroke-[2.5]"></i>
               Akarirasa
@@ -432,7 +425,7 @@
           <!-- Links Cols -->
           <div class="lg:col-span-7 grid grid-cols-2 md:grid-cols-3 gap-8">
             <div>
-              <h4 class="text-white font-bold mb-6 font-heading tracking-wide">
+              <h4 class="text-brand-light font-bold mb-6 font-heading tracking-wide">
                 Jelajah
               </h4>
               <ul class="space-y-3 text-sm opacity-80">
@@ -465,7 +458,7 @@
               </ul>
             </div>
             <div>
-              <h4 class="text-white font-bold mb-6 font-heading tracking-wide">
+              <h4 class="text-brand-light font-bold mb-6 font-heading tracking-wide">
                 Bantuan
               </h4>
               <ul class="space-y-3 text-sm opacity-80">
@@ -487,7 +480,7 @@
               </ul>
             </div>
             <div>
-              <h4 class="text-white font-bold mb-6 font-heading tracking-wide">
+              <h4 class="text-brand-light font-bold mb-6 font-heading tracking-wide">
                 Legal
               </h4>
               <ul class="space-y-3 text-sm opacity-80">

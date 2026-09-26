@@ -22,10 +22,10 @@
     <!-- Main JS (As Requested in Head) -->
     <script src="js/main.js" defer></script>
   </head>
-  <body class="antialiased bg-brand-bg selection:bg-brand-accent selection:text-brand-dark">
+  <body class="antialiased bg-brand-light selection:bg-brand-accent selection:text-brand-dark">
     
     <!-- Navbar (Exact from reference) -->
-    <nav class="fixed w-full top-0 z-50 bg-brand-bg/90 backdrop-blur-md border-b border-brand-light transition-all duration-300" id="navbar">
+    <nav class="fixed w-full top-0 z-50 bg-brand-light/90 backdrop-blur-md border-b border-brand-light transition-all duration-300" id="navbar">
       <div class="container mx-auto px-6 lg:px-12 py-4 flex justify-between items-center">
         <!-- Logo -->
         <a href="index.html" class="text-2xl font-heading text-brand flex items-center gap-2">
@@ -54,7 +54,7 @@
 
         <!-- CTA & Mobile Toggle -->
         <div class="flex items-center gap-4">
-          <a href="index.html#produk" class="hidden md:flex gap-x-3 bg-brand-secondary hover:bg-brand text-white px-5 py-2.5 rounded-full text-sm font-bold transition-colors shadow-lg shadow-brand/20">
+          <a href="index.html#produk" class="hidden md:flex gap-x-3 bg-brand-secondary hover:bg-brand text-brand-light px-5 py-2.5 rounded-full text-sm font-bold transition-colors shadow-lg shadow-brand/20">
             Beli Kopi
             <i data-lucide="MoveRight" class="w-6 h-6"></i>
           </a>
@@ -68,7 +68,7 @@
       <!-- Mobile Menu Dropdown -->
       <div
         id="mobile-menu"
-        class="hidden md:hidden bg-brand-bg border-b border-brand-light"
+        class="hidden md:hidden bg-brand-light border-b border-brand-light"
       >
         <div class="flex flex-col px-6 py-10 space-y-5 text-center shadow-lg shadow-brand/10">
           <a href="index.html" class="hover:text-brand-accent transition-colors"
@@ -89,7 +89,7 @@
           <hr>
           <a
             href="#produk"
-            class="bg-brand-secondary flex gap-x-3 justify-center hover:bg-brand text-white px-5 py-3 rounded-full font-bold mx-auto w-full max-w-xs shadow-lg shadow-brand/20"
+            class="bg-brand-secondary flex gap-x-3 justify-center hover:bg-brand text-brand-light px-5 py-3 rounded-full font-bold mx-auto w-full max-w-xs shadow-lg shadow-brand/20"
             >Beli Kopi
             <i data-lucide="MoveRight" class="w-6 h-6"></i>
             </a>
@@ -112,7 +112,7 @@
             Akarirasa lahir dari keyakinan sederhana: secangkir kopi dapat mendekatkan petani, perajin, dan penikmat.
           </p>
           <div class="pt-2">
-            <a href="#" class="w-fit flex items-center gap-x-3 bg-brand-secondary hover:bg-brand text-white px-8 py-3.5 rounded-full font-bold transition-colors shadow-sm shadow-lg shadow-brand/20">
+            <a href="#" class="w-fit flex items-center gap-x-3 bg-brand-secondary hover:bg-brand text-brand-light px-8 py-3.5 rounded-full font-bold transition-colors shadow-sm shadow-lg shadow-brand/20">
               Ikuti Perjalanan Kami
               <i data-lucide="MoveRight" class="w-6 h-6"></i>
             </a>
@@ -120,11 +120,8 @@
         </div>
 
         <!-- Right Image Placeholder -->
-        <div class="relative w-full aspect-[4/3] bg-brand-light/20 border border-brand-light rounded-sm flex flex-col items-center justify-center p-8 text-center text-brand-accent">
-          <i data-lucide="image" class="w-8 h-8 mb-4 opacity-50"></i>
-          <span class="text-xs font-bold uppercase tracking-wider opacity-60 max-w-[300px]">
-            PLACEHOLDER FOTO – proses dari kebun kopi atau detail kopi
-          </span>
+        <div class="relative w-full aspect-[4/3] bg-brand-light/20 border border-brand-light rounded-md flex flex-col items-center justify-center p-8 text-center text-brand-accent overflow-hidden">
+          <img src="assets/coffee-farm.png" class="object-cover absolute top-0 left-0 bottom-0 right-0 w-full h-full" alt="">
         </div>
       </div>
     </section>
@@ -133,11 +130,8 @@
     <section class="container mx-auto px-6 lg:px-12 py-16 lg:py-24 border-b border-brand-light/50">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
         <!-- Left Image Placeholder -->
-        <div class="order-2 lg:order-1 relative w-full aspect-[4/3] bg-brand-light/20 border border-brand-light rounded-sm flex flex-col items-center justify-center p-8 text-center text-brand-accent">
-          <i data-lucide="image" class="w-8 h-8 mb-4 opacity-50"></i>
-          <span class="text-xs font-bold uppercase tracking-wider opacity-60 max-w-[300px]">
-            PLACEHOLDER FOTO – foto interaksi antara petani dengan tim akarirasa
-          </span>
+        <div class="relative w-full aspect-[4/3] bg-brand-light/20 border border-brand-light rounded-md flex flex-col items-center justify-center p-8 text-center text-brand-accent overflow-hidden">
+          <img src="assets/coffee-bean-field.png" class="object-cover absolute top-0 left-0 bottom-0 right-0 w-full h-full" alt="">
         </div>
 
         <!-- Right Text -->
@@ -181,7 +175,7 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
           <!-- Visi Box -->
-          <div class="bg-white text-brand p-10 shadow-sm">
+          <div class="bg-brand-light text-brand p-10 shadow-sm">
             <h3 class="text-2xl font-heading mb-4">Visi</h3>
             <p class="text-sm opacity-80 leading-relaxed text-brand-dark">
                 Menjadikan kopi Nusantara pilihan sehari-hari yang membanggakan dan berdampak baik.
@@ -189,7 +183,7 @@
           </div>
 
           <!-- Misi Box -->
-          <div class="bg-white text-brand p-10 shadow-sm">
+          <div class="bg-brand-light text-brand p-10 shadow-sm">
             <h3 class="text-2xl font-heading mb-4">Misi</h3>
             <p class="text-sm opacity-80 leading-relaxed text-brand-dark">
               Membangun ekosistem kopi yang transparan, menyangrai secara presisi.
@@ -200,7 +194,7 @@
     </section>
 
     <!-- Prinsip Section -->
-    <section class="bg-brand-bg py-20 lg:py-24">
+    <section class="bg-brand-light py-20 lg:py-24">
       <div class="container mx-auto px-6 lg:px-12">
         <div class="mb-12">
           <p class="text-brand-accent uppercase tracking-widest text-xs font-bold mb-3">
@@ -241,7 +235,7 @@
     </section>
 
     <!-- Timeline Section -->
-    <section class="bg-[#F8F2F0] py-20 lg:py-24">
+    <section class="py-20 lg:py-24">
       <div class="container mx-auto px-6 lg:px-12">
         <div class="mb-12">
           <p class="text-brand-accent uppercase tracking-widest text-xs font-bold mb-3">
@@ -254,7 +248,7 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <!-- Year 1 -->
-          <div class="bg-white border border-brand/10 p-8 shadow-sm">
+          <div class="bg-brand-light border border-brand/10 p-8 shadow-sm">
             <span class="text-brand font-heading text-2xl block mb-3">2016</span>
             <h3 class="font-bold text-brand text-base mb-2">Roastery pertama</h3>
             <p class="text-sm opacity-80 text-brand-accent">
@@ -262,7 +256,7 @@
             </p>
           </div>
           <!-- Year 2 -->
-          <div class="bg-white border border-brand/10 p-8 shadow-sm">
+          <div class="bg-brand-light border border-brand/10 p-8 shadow-sm">
             <span class="text-brand font-heading text-2xl block mb-3">2019</span>
             <h3 class="font-bold text-brand text-base mb-2">24 mitra kebun</h3>
             <p class="text-sm opacity-80 text-brand-accent">
@@ -270,7 +264,7 @@
             </p>
           </div>
           <!-- Year 3 -->
-          <div class="bg-white border border-brand/10 p-8 shadow-sm">
+          <div class="bg-brand-light border border-brand/10 p-8 shadow-sm">
             <span class="text-brand font-heading text-2xl block mb-3">2023</span>
             <h3 class="font-bold text-brand text-base mb-2">Kedai Braga</h3>
             <p class="text-sm opacity-80 text-brand-accent">
@@ -278,7 +272,7 @@
             </p>
           </div>
           <!-- Year 4 -->
-          <div class="bg-white border border-brand/10 p-8 shadow-sm">
+          <div class="bg-brand-light border border-brand/10 p-8 shadow-sm">
             <span class="text-brand-accent font-heading text-2xl block mb-3">Hari ini</span>
             <h3 class="font-bold text-brand text-base mb-2">Langkah Terus Berlanjut</h3>
             <p class="text-sm opacity-80 text-brand-accent">
@@ -303,9 +297,8 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Team Member 1 -->
         <div>
-          <div class="w-full aspect-[4/3] md:aspect-square lg:aspect-[4/5] bg-brand-light/20 border border-brand-light rounded-sm flex flex-col items-center justify-center p-6 text-center text-brand-accent mb-6">
-            <i data-lucide="image" class="w-8 h-8 mb-4 opacity-50"></i>
-            <span class="text-[10px] uppercase tracking-wider font-bold opacity-60">PLACEHOLDER FOTO (Raka sedang cupping atau di depan mesin roasting)</span>
+          <div class="relative w-full aspect-[4/3] md:aspect-square lg:aspect-[4/5] bg-brand-light/20 border border-brand-light rounded-md text-brand-accent mb-6 overflow-hidden">
+            <img src="assets/raka-pradipta.png" class="object-cover absolute top-0 left-0 bottom-0 right-0 w-full h-full" alt="">
           </div>
           <h3 class="text-lg font-bold text-brand mb-1">Raka Pradipta</h3>
           <p class="text-xs text-brand-accent uppercase tracking-wider font-bold">Co-Founder / Roaster</p>
@@ -313,9 +306,8 @@
 
         <!-- Team Member 2 -->
         <div>
-          <div class="w-full aspect-[4/3] md:aspect-square lg:aspect-[4/5] bg-brand-light/20 border border-brand-light rounded-sm flex flex-col items-center justify-center p-6 text-center text-brand-accent mb-6">
-            <i data-lucide="image" class="w-8 h-8 mb-4 opacity-50"></i>
-            <span class="text-[10px] uppercase tracking-wider font-bold opacity-60">PLACEHOLDER FOTO (Maya di kebun atau cek biji hijau)</span>
+          <div class="relative w-full aspect-[4/3] md:aspect-square lg:aspect-[4/5] bg-brand-light/20 border border-brand-light rounded-md text-brand-accent mb-6 overflow-hidden">
+            <img src="assets/maya-larasati.png" class="object-cover absolute top-0 left-0 bottom-0 right-0 w-full h-full" alt="">
           </div>
           <h3 class="text-lg font-bold text-brand mb-1">Maya Larasati</h3>
           <p class="text-xs text-brand-accent uppercase tracking-wider font-bold">Quality Control / Q-Grader</p>
@@ -323,9 +315,8 @@
 
         <!-- Team Member 3 -->
         <div>
-          <div class="w-full aspect-[4/3] md:aspect-square lg:aspect-[4/5] bg-brand-light/20 border border-brand-light rounded-sm flex flex-col items-center justify-center p-6 text-center text-brand-accent mb-6">
-            <i data-lucide="image" class="w-8 h-8 mb-4 opacity-50"></i>
-            <span class="text-[10px] uppercase tracking-wider font-bold opacity-60">PLACEHOLDER FOTO (Dimas di kedai meracik espresso atau v60)</span>
+          <div class="relative w-full aspect-[4/3] md:aspect-square lg:aspect-[4/5] bg-brand-light/20 border border-brand-light rounded-md text-brand-accent mb-6 overflow-hidden">
+            <img src="assets/dimas-ardi.png" class="object-cover absolute top-0 left-0 bottom-0 right-0 w-full h-full" alt="">
           </div>
           <h3 class="text-lg font-bold text-brand mb-1">Dimas Ardi</h3>
           <p class="text-xs text-brand-accent uppercase tracking-wider font-bold">Head Barista</p>
@@ -337,11 +328,11 @@
     <section class="w-full flex flex-col lg:flex-row mt-12 lg:mt-24">
       <!-- Left Side (Maroon Bg) -->
       <div
-        class="w-full lg:w-1/2 bg-brand text-white p-12 lg:p-24 flex flex-col justify-center relative overflow-hidden"
+        class="w-full lg:w-1/2 bg-brand text-brand-light p-12 lg:p-24 flex flex-col justify-center relative overflow-hidden"
       >
         <!-- Decorative bg -->
         <div
-          class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-32 -mt-32 blur-3xl"
+          class="absolute top-0 right-0 w-64 h-64 bg-brand-light/5 rounded-full -mr-32 -mt-32 blur-3xl"
         ></div>
 
         <div class="relative z-10 max-w-md mx-auto lg:mx-0 lg:ml-auto w-full">
@@ -366,15 +357,12 @@
 
       <!-- Right Side (Light Bg with Image) -->
       <div
-        class="w-full lg:w-1/2 bg-[#FCFAFA] p-8 lg:p-16 flex items-center justify-center min-h-[400px]"
+        class="w-full lg:w-1/2 p-8 lg:p-16 flex items-center justify-center min-h-[400px]"
       >
         <div
-          class="w-full h-full min-h-[300px] max-w-lg bg-brand-light/40 border border-brand-accent/20 rounded-2xl flex flex-col items-center justify-center p-8 text-center text-brand-accent"
+          class="relative overflow-hidden w-full h-full min-h-[300px] max-w-lg bg-brand-light/40 border border-brand-accent/20 rounded-2xl flex flex-col items-center justify-center p-8 text-center text-brand-accent"
         >
-          <i data-lucide="package" class="w-12 h-12 mb-4 opacity-40"></i>
-          <span class="text-sm font-bold uppercase tracking-wider opacity-60"
-            >Placeholder: Packaging Pengiriman</span
-          >
+          <img src="assets/coffee-package.png" class="object-cover absolute top-0 left-0 bottom-0 right-0 w-full h-full" alt="">
         </div>
       </div>
     </section>
@@ -391,7 +379,7 @@
           <div class="lg:col-span-5">
             <a
               href="#"
-              class="text-3xl font-heading text-white flex items-center gap-2 mb-6"
+              class="text-3xl font-heading text-brand-light flex items-center gap-2 mb-6"
             >
               <i data-lucide="coffee" class="w-8 h-8 stroke-[2.5]"></i>
               Akarirasa
@@ -468,7 +456,7 @@
           <!-- Links Cols -->
           <div class="lg:col-span-7 grid grid-cols-2 md:grid-cols-3 gap-8">
             <div>
-              <h4 class="text-white font-bold mb-6 font-heading tracking-wide">
+              <h4 class="text-brand-light font-bold mb-6 font-heading tracking-wide">
                 Jelajah
               </h4>
               <ul class="space-y-3 text-sm opacity-80">
@@ -501,7 +489,7 @@
               </ul>
             </div>
             <div>
-              <h4 class="text-white font-bold mb-6 font-heading tracking-wide">
+              <h4 class="text-brand-light font-bold mb-6 font-heading tracking-wide">
                 Bantuan
               </h4>
               <ul class="space-y-3 text-sm opacity-80">
@@ -523,7 +511,7 @@
               </ul>
             </div>
             <div>
-              <h4 class="text-white font-bold mb-6 font-heading tracking-wide">
+              <h4 class="text-brand-light font-bold mb-6 font-heading tracking-wide">
                 Legal
               </h4>
               <ul class="space-y-3 text-sm opacity-80">

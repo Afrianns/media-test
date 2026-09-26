@@ -5,8 +5,9 @@ tailwind.config = {
         brand: {
           DEFAULT: "#722C39", // Deep maroon/burgundy
           secondary: "#C6555B",
-          light: "#F8E9EB", // Very light pink for placeholders/bg areas
-          bg: "#FCFAFA", // Main off-white background
+          light: "#F8F7FB", // Very light #3f3f3f for placeholders/bg areas
+          danger: "#FF0000",
+          success: "#76C457",
           accent: "#DB258F", // Pink/rose for accents and secondary text
         },
       },
