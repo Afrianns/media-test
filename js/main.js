@@ -76,3 +76,74 @@ accordionItems.forEach((item) => {
     }
   });
 });
+
+// kontak validasi
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contactForm");
+  const successBanner = document.getElementById("successBanner");
+
+  const inputs = {
+    nama: {
+      el: document.getElementById("nama"),
+      errorEl: document.getElementById("namaError"),
+      validate: (val) => val.trim().length > 0
+    },
+    email: {
+      el: document.getElementById("email"),
+      errorEl: document.getElementById("emailError"),
+      validate: (val) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val.trim())
+    },
+    pesan: {
+      el: document.getElementById("pesan"),
+      errorEl: document.getElementById("pesanError"),
+      validate: (val) => val.trim().length > 0
+    }
+  };
+
+  function toggleError(inputObj, isInvalid) {
+    if (isInvalid) {
+      inputObj.errorEl.classList.remove("hidden");
+      inputObj.el.classList.add("border-red-500");
+      inputObj.el.classList.remove("border-brand/20", "focus:border-brand-accent");
+    } else {
+      inputObj.errorEl.classList.add("hidden");
+      inputObj.el.classList.remove("border-red-500");
+      inputObj.el.classList.add("border-brand/20", "focus:border-brand-accent");
+    }
+  }
+
+  Object.keys(inputs).forEach(key => {
+    const field = inputs[key];
+    field.el.addEventListener("input", () => {
+      const isValid = field.validate(field.el.value);
+      toggleError(field, !isValid);
+    });
+  });
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    let isFormValid = true;
+
+    // Check all fields
+    Object.keys(inputs).forEach(key => {
+      const field = inputs[key];
+      const isValid = field.validate(field.el.value);
+      
+      toggleError(field, !isValid);
+      if (!isValid) isFormValid = false;
+    });
+
+    if (isFormValid) {
+      // Hide form elements and display success banner
+      form.reset();
+      successBanner.classList.remove("hidden");
+      
+      // Optional: Hide success banner after 5 seconds
+      setTimeout(() => {
+        successBanner.classList.add("hidden");
+      }, 5000);
+    } else {
+      successBanner.classList.add("hidden");
+    }
+  });
+});
