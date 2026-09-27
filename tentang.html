@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="company profile" content="infromasi seputar perusahaan penjual kopi akarirasa.">
     <title>Tentang Kami - Akarirasa</title>
 
     <!-- Google Fonts -->
@@ -28,26 +29,26 @@
     <nav class="fixed w-full top-0 z-50 bg-brand-light/90 backdrop-blur-md border-b border-brand-light transition-all duration-300" id="navbar">
       <div class="container mx-auto px-6 lg:px-12 py-4 flex justify-between items-center">
         <!-- Logo -->
-        <a href="index.html" class="text-2xl font-heading text-brand flex items-center gap-2">
+        <a href="index.html" aria-label="pergi ke halaman beranda" class="text-2xl font-heading text-brand flex items-center gap-2">
           <i data-lucide="coffee" class="w-6 h-6 stroke-[3]"></i>
           Akarirasa
         </a>
 
         <!-- Desktop Links -->
         <div class="hidden md:flex space-x-8 text-sm font-medium">
-          <a href="index.html" class="hover:text-brand-accent transition-colors"
+          <a href="index.html" aria-label="pergi ke halaman beranda" class="hover:text-brand-accent transition-colors"
             >Beranda</a
           >
-          <a href="produk.html" class="hover:text-brand-accent transition-colors"
+          <a href="produk.html" aria-label="pergi ke halaman produk" class="hover:text-brand-accent transition-colors"
             >Produk</a
           >
-          <a href="tentang.html" class="text-brand-accent transition-colors"
+          <a href="tentang.html" aria-label="pergi ke halaman tentang" class="text-brand-accent transition-colors"
             >Tentang Kami</a
           >
-          <a href="lokasi.html" class="hover:text-brand-accent transition-colors"
+          <a href="lokasi.html" aria-label="pergi ke halaman lokasi" class="hover:text-brand-accent transition-colors"
             >Lokasi</a
           >
-          <a href="kontak.html" class="hover:text-brand-accent transition-colors"
+          <a href="kontak.html" aria-label="pergi ke halaman kontak" class="hover:text-brand-accent transition-colors"
             >Kontak</a
           >
         </div>
@@ -71,24 +72,25 @@
         class="hidden md:hidden bg-brand-light border-b border-brand-light"
       >
         <div class="flex flex-col px-6 py-10 space-y-5 text-center shadow-lg shadow-brand/10">
-          <a href="index.html" class="hover:text-brand-accent transition-colors"
+          <a href="index.html" aria-label="pergi ke halaman beranda" class="hover:text-brand-accent transition-colors"
             >Beranda</a
           >
-          <a href="produk.html" class="hover:text-brand-accent transition-colors"
+          <a href="produk.html" aria-label="pergi ke halaman produk" class="hover:text-brand-accent transition-colors"
             >Produk</a
           >
-          <a href="tentang.html" class="text-brand-accent transition-colors"
+          <a href="tentang.html" aria-label="pergi ke halaman tentang" class="text-brand-accent transition-colors"
             >Tentang Kami</a
           >
-          <a href="lokasi.html" class="hover:text-brand-accent transition-colors"
+          <a href="lokasi.html" aria-label="pergi ke halaman lokasi" class="hover:text-brand-accent transition-colors"
             >Lokasi</a
           >
-          <a href="kontak.html" class="hover:text-brand-accent transition-colors"
+          <a href="kontak.html" aria-label="pergi ke halaman kontak" class="hover:text-brand-accent transition-colors"
             >Kontak</a
           >
           <hr>
           <a
-            href="#produk"
+            href="produk.html"
+            aria-label="pergi ke halaman produk"
             class="bg-brand-secondary flex gap-x-3 justify-center hover:bg-brand text-brand-light px-5 py-3 rounded-full font-bold mx-auto w-full max-w-xs shadow-lg shadow-brand/20"
             >Beli Kopi
             <i data-lucide="MoveRight" class="w-6 h-6"></i>
@@ -112,16 +114,16 @@
             Akarirasa lahir dari keyakinan sederhana: secangkir kopi dapat mendekatkan petani, perajin, dan penikmat.
           </p>
           <div class="pt-2">
-            <a href="#" class="w-fit flex items-center gap-x-3 bg-brand-secondary hover:bg-brand text-brand-light px-8 py-3.5 rounded-full font-bold transition-colors shadow-sm shadow-lg shadow-brand/20">
+            <a href="#perjalanan" aria-label="pergi ke perjalanan" class="w-fit flex items-center gap-x-3 bg-brand-secondary hover:bg-brand text-brand-light px-8 py-3.5 rounded-full font-bold transition-colors shadow-sm shadow-lg shadow-brand/20">
               Ikuti Perjalanan Kami
-              <i data-lucide="MoveRight" class="w-6 h-6"></i>
+              <i data-lucide="arrow-down" class="w-4 h-4"></i>
             </a>
           </div>
         </div>
 
         <!-- Right Image Placeholder -->
         <div class="relative w-full aspect-[4/3] bg-brand-light/20 border border-brand-light rounded-md flex flex-col items-center justify-center p-8 text-center text-brand-accent overflow-hidden">
-          <img src="assets/coffee-farm.png" class="object-cover absolute top-0 left-0 bottom-0 right-0 w-full h-full" alt="">
+          <img src="assets/coffee-farm.png" alt="gambar pemanenan biji kopi" class="object-cover absolute top-0 left-0 bottom-0 right-0 w-full h-full" alt="">
         </div>
       </div>
     </section>
@@ -131,7 +133,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
         <!-- Left Image Placeholder -->
         <div class="relative w-full aspect-[4/3] bg-brand-light/20 border border-brand-light rounded-md flex flex-col items-center justify-center p-8 text-center text-brand-accent overflow-hidden">
-          <img src="assets/coffee-bean-field.png" class="object-cover absolute top-0 left-0 bottom-0 right-0 w-full h-full" alt="">
+          <img src="assets/coffee-bean-field.png" alt="gambar landang biji kopi" class="object-cover absolute top-0 left-0 bottom-0 right-0 w-full h-full" alt="">
         </div>
 
         <!-- Right Text -->
@@ -163,7 +165,7 @@
 
     <!-- Visi & Misi Section -->
     <section class="bg-brand text-brand-bg py-20 lg:py-24">
-      <div class="container mx-auto px-6 lg:px-12">
+      <div class="container mx-auto px-6 lg:px-12 text-brand-light">
         <div class="mb-12">
           <p class="text-brand-accent uppercase tracking-widest text-xs font-bold mb-4">
             Visi & Misi
@@ -235,7 +237,7 @@
     </section>
 
     <!-- Timeline Section -->
-    <section class="py-20 lg:py-24">
+    <section class="py-20 lg:py-24" id="perjalanan">
       <div class="container mx-auto px-6 lg:px-12">
         <div class="mb-12">
           <p class="text-brand-accent uppercase tracking-widest text-xs font-bold mb-3">
@@ -298,7 +300,7 @@
         <!-- Team Member 1 -->
         <div>
           <div class="relative w-full aspect-[4/3] md:aspect-square lg:aspect-[4/5] bg-brand-light/20 border border-brand-light rounded-md text-brand-accent mb-6 overflow-hidden">
-            <img src="assets/raka-pradipta.png" class="object-cover absolute top-0 left-0 bottom-0 right-0 w-full h-full" alt="">
+            <img src="assets/raka-pradipta.png" alt="gambar raka radipta" class="object-cover absolute top-0 left-0 bottom-0 right-0 w-full h-full" alt="">
           </div>
           <h3 class="text-lg font-bold text-brand mb-1">Raka Pradipta</h3>
           <p class="text-xs text-brand-accent uppercase tracking-wider font-bold">Co-Founder / Roaster</p>
@@ -307,7 +309,7 @@
         <!-- Team Member 2 -->
         <div>
           <div class="relative w-full aspect-[4/3] md:aspect-square lg:aspect-[4/5] bg-brand-light/20 border border-brand-light rounded-md text-brand-accent mb-6 overflow-hidden">
-            <img src="assets/maya-larasati.png" class="object-cover absolute top-0 left-0 bottom-0 right-0 w-full h-full" alt="">
+            <img src="assets/maya-larasati.png" alt="gambar maya larasati" class="object-cover absolute top-0 left-0 bottom-0 right-0 w-full h-full" alt="">
           </div>
           <h3 class="text-lg font-bold text-brand mb-1">Maya Larasati</h3>
           <p class="text-xs text-brand-accent uppercase tracking-wider font-bold">Quality Control / Q-Grader</p>
@@ -316,7 +318,7 @@
         <!-- Team Member 3 -->
         <div>
           <div class="relative w-full aspect-[4/3] md:aspect-square lg:aspect-[4/5] bg-brand-light/20 border border-brand-light rounded-md text-brand-accent mb-6 overflow-hidden">
-            <img src="assets/dimas-ardi.png" class="object-cover absolute top-0 left-0 bottom-0 right-0 w-full h-full" alt="">
+            <img src="assets/dimas-ardi.png" alt="gambar dimas ardi" class="object-cover absolute top-0 left-0 bottom-0 right-0 w-full h-full" alt="">
           </div>
           <h3 class="text-lg font-bold text-brand mb-1">Dimas Ardi</h3>
           <p class="text-xs text-brand-accent uppercase tracking-wider font-bold">Head Barista</p>
@@ -347,7 +349,8 @@
             Kopi segar, dikirim dari roastery langsung ke rumah Anda.
           </h2>
           <a
-            href="#produk"
+            href="produk.html"
+            aria-label="ke halaman pesan kopi"
             class="inline-block bg-brand-secondary text-brand-dark px-8 py-3.5 rounded-full font-bold transition-colors shadow-lg shadow-black/10"
           >
             Pesan Kopi
@@ -362,7 +365,7 @@
         <div
           class="relative overflow-hidden w-full h-full min-h-[300px] max-w-lg bg-brand-light/40 border border-brand-accent/20 rounded-2xl flex flex-col items-center justify-center p-8 text-center text-brand-accent"
         >
-          <img src="assets/coffee-package.png" class="object-cover absolute top-0 left-0 bottom-0 right-0 w-full h-full" alt="">
+          <img src="assets/coffee-package.png" alt="gambar paket kopi" alt="gambar paket kopi" class="object-cover absolute top-0 left-0 bottom-0 right-0 w-full h-full" alt="">
         </div>
       </div>
     </section>
@@ -377,19 +380,20 @@
         >
           <!-- Brand Col -->
           <div class="lg:col-span-5">
-            <a
-              href="#"
+            <div
               class="text-3xl font-heading text-brand-light flex items-center gap-2 mb-6"
             >
               <i data-lucide="coffee" class="w-8 h-8 stroke-[2.5]"></i>
               Akarirasa
-            </a>
+            </div>
+            
             <p class="opacity-70 max-w-sm mb-6 text-sm leading-relaxed">
               Kopi Nusantara yang dirawat dari akar, disangrai untuk rasa.
             </p>
             <div class="flex gap-4">
               <a
                 href="#"
+                aria-label="ke halaman facebook"
                 class="w-10 h-10 rounded-full bg-brand-secondary flex items-center justify-center hover:bg-brand-accent transition-colors"
               >
                 <svg
@@ -418,6 +422,7 @@
               </a>
               <a
                 href="#"
+                aria-label="ke halaman instagram"
                 class="w-10 h-10 rounded-full bg-brand-secondary flex items-center justify-center hover:bg-brand-accent transition-colors"
               >
                 <svg
@@ -435,6 +440,7 @@
               </a>
               <a
                 href="#"
+                aria-label="ke halaman twitter atau x"
                 class="w-10 h-10 rounded-full bg-brand-secondary flex items-center justify-center hover:bg-brand-accent transition-colors"
               >
                 <svg
@@ -461,13 +467,16 @@
               </h4>
               <ul class="space-y-3 text-sm opacity-80">
                 <li>
-                  <a href="index.html" class="hover:text-brand-accent transition-colors"
+                  <a href="index.html" 
+                  aria-label="ke halaman beranda"
+                  class="hover:text-brand-accent transition-colors"
                     >Beranda</a
                   >
                 </li>
                 <li>
                   <a
                     href="tentang.html"
+                    aria-label="ke halaman tentang kami"
                     class="hover:text-brand-accent transition-colors"
                     >Tentang Kami</a
                   >
@@ -475,6 +484,7 @@
                 <li>
                   <a
                     href="produk.html"
+                    aria-label="ke halaman produk"
                     class="hover:text-brand-accent transition-colors"
                     >Produk</a
                   >
@@ -482,6 +492,7 @@
                 <li>
                   <a
                     href="lokasi.html"
+                    aria-label="ke halaman lokasi"
                     class="hover:text-brand-accent transition-colors"
                     >Lokasi</a
                   >
@@ -494,17 +505,17 @@
               </h4>
               <ul class="space-y-3 text-sm opacity-80">
                 <li>
-                  <a href="#" class="hover:text-brand-accent transition-colors"
+                  <a href="#"  aria-label="informasi pengiriman dan retur" class="hover:text-brand-accent transition-colors"
                     >Pengiriman & Retur</a
                   >
                 </li>
                 <li>
-                  <a href="#" class="hover:text-brand-accent transition-colors"
+                  <a href="#" aria-label="informasi pertanyaan" class="hover:text-brand-accent transition-colors"
                     >FAQ</a
                   >
                 </li>
                 <li>
-                  <a href="kontak.html" class="hover:text-brand-accent transition-colors"
+                  <a href="kontak.html" aria-label="ke halaman kontak" class="hover:text-brand-accent transition-colors"
                     >Kontak</a
                   >
                 </li>
@@ -516,12 +527,12 @@
               </h4>
               <ul class="space-y-3 text-sm opacity-80">
                 <li>
-                  <a href="#" class="hover:text-brand-accent transition-colors"
+                  <a href="#" aria-label="pergi ke syarat dan ketentuan" class="hover:text-brand-accent transition-colors"
                     >Syarat & Ketentuan</a
                   >
                 </li>
                 <li>
-                  <a href="#" class="hover:text-brand-accent transition-colors"
+                  <a href="#" aria-label="pergi ke kebijakan dan privasi" class="hover:text-brand-accent transition-colors"
                     >Kebijakan Privasi</a
                   >
                 </li>
@@ -535,11 +546,6 @@
           class="border-t border-brand-light/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs opacity-50"
         >
           <p>&copy; 2024 Akarirasa Coffee Roasters. Hak Cipta Dilindungi.</p>
-          <p>
-            Didesain dengan
-            <i data-lucide="heart" class="w-3 h-3 inline mx-1 fill-current"></i>
-            di Bandung
-          </p>
         </div>
       </div>
     </footer>

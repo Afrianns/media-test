@@ -3,12 +3,12 @@ tailwind.config = {
     extend: {
       colors: {
         brand: {
-          DEFAULT: "#722C39", // Deep maroon/burgundy
+          DEFAULT: "#722C39",
           secondary: "#C6555B",
-          light: "#F8F7FB", // Very light #3f3f3f for placeholders/bg areas
+          light: "#F8F7FB", 
           danger: "#FF0000",
           success: "#76C457",
-          accent: "#DB258F", // Pink/rose for accents and secondary text
+          accent: "#DB258F",
         },
       },
       fontFamily: {
